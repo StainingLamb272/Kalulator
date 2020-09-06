@@ -8,15 +8,45 @@
 </head>
 <body>
     <main>
-        <button type="submit" id="1">1</button>
-        <button type="submit" id="2">2</button>
-        <button type="submit" id="3">3</button>
-        <button type="submit" id="4">4</button>
-        <button type="submit" id="5">5</button>
-        <button type="submit" id="6">6</button>
-        <button type="submit" id="7">7</button>
-        <button type="submit" id="8">8</button>
-        <button type="submit" id="9">9</button>
+        <div class="showinfo" id="showinfo">
+            <p><strong>Lets Calulate!</strong></p>
+        </div>
+        <div class="numbers">
+            <button type="submit" id="1" value="1" onclick="displaybutton(this.value)">1</button>
+            <button type="submit" id="2" value="2" onclick="displaybutton(this.value)">2</button>
+            <button type="submit" id="3" value="3" onclick="displaybutton(this.value)">3</button>
+            <button type="submit" id="4" value="4" onclick="displaybutton(this.value)">4</button>
+            <button type="submit" id="5" value="5" onclick="displaybutton(this.value)">5</button>
+            <button type="submit" id="6" value="6" onclick="displaybutton(this.value)">6</button>
+            <button type="submit" id="7" value="7" onclick="displaybutton(this.value)">7</button>
+            <button type="submit" id="8" value="8" onclick="displaybutton(this.value)">8</button>
+            <button type="submit" id="9" value="9" onclick="displaybutton(this.value)">9</button>
+            <button type="submit" id="zero" value="0" onclick="displaybutton(this.value)">0</button>
+            <button type="submit" id="equals" value="=" onclick="displaybutton(this.value)">=</button>
+        </div>
+        <div class="operations">
+            <button type="submit" id="pluss" value="+" onclick="displaybutton(this.value)">+</button>
+            <button type="submit" id="minus" value="-" onclick="displaybutton(this.value)">-</button>
+            <button type="submit" id="multiply" value="*" onclick="displaybutton(this.value)">*</bu<<tton>
+            <button type="submit" id="divide" value="/" onclick="displaybutton(this.value)">/</button>
+        </div>
+        <div class="bottom">
+            <p>other info</p>
+        </div>
     </main>
+    
+    <script>
+        var mld;
+
+        function displaybutton(val) {
+            
+            mld += val;
+            document.getElementById("showinfo").innerHTML = mld;
+        }
+        </script>
+        
+    <footer>
+        <p>&copy; StainingLamb272 - 2020</p>
+    </footer>
 </body>
 </html>

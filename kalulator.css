@@ -6,17 +6,54 @@ main {
     background-color: #fff;
     color: #000000;
     margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 200px 50px;
 }
 
-.numbers, .operators {
+.showinfo, .bottom {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.showinfo{
+    background-color: white;
+    font-size: 2em;
+    border: solid black 1px;
+    text-align: center;
+}
+
+.bottom {
+    background-color: dodgerblue;
+}   
+
+.numbers, .operations{
     display: grid;
 }
 
 .numbers {
-    grid-column: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: chocolate;
+}
+
+.operations {
+    grid-template-columns: repeat(1, 0.5fr);
+    background-color: cornflowerblue;
+
+}
+
+#pluss, #minus, #multiply, #divide {
+    grid-column-end: 3;
 }
 
 button {
-    height: 30px;
-    width: 30px;
+    background-color: aliceblue;
+    font-size: 1.5em;
+}
+
+footer {
+    margin-left: 10px;
 }
