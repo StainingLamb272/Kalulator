@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+main {
+    background-color: #fff;
+    color: #000000;
+    margin: 80px;
+}
+
+.numbers, .operators {
+    display: grid;
+}
+
+.numbers {
+    grid-column: auto;
+}
+
+button {
+    height: 30px;
+    width: 30px;
+}
