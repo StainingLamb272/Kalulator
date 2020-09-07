@@ -12,7 +12,7 @@
             <p><strong>Lets Calulate!</strong></p>
         </div>
         <div class="numbers">
-            <button type="submit" id="1" value="1" onclick="displaybutton(this.value)">1</button>
+            <button type="button" id="1" value="1" onclick="displaybutton(this.value)">1</button>
             <button type="submit" id="2" value="2" onclick="displaybutton(this.value)">2</button>
             <button type="submit" id="3" value="3" onclick="displaybutton(this.value)">3</button>
             <button type="submit" id="4" value="4" onclick="displaybutton(this.value)">4</button>
@@ -36,12 +36,19 @@
     </main>
     
     <script>
-        var mld;
+        var mld="";
 
         function displaybutton(val) {
-            
+            if (val=="=") {
+                // alert("if test true");
+                // ans = eval(mld);
+                // alert("melding> " + mld);
+                document.getElementById("showinfo").innerHTML = mld + " =\n" + eval(mld);
+            // alert("value is; " + val);
+            } else {
             mld += val;
             document.getElementById("showinfo").innerHTML = mld;
+            }
         }
         </script>
         
